@@ -1,0 +1,22 @@
+npm i -g serve
+
+error:
+{changed execution ploicy
+Commands:
+start powershell as admin
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope LocalMachine
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+}
+serve -s build -p 8000
+success
+
+npm i json-server
+
+after that edit package.json include script:
+
+    "server": "json-server --watch db.json --port 5000"
+
+npm run server
+
+download react router dom
